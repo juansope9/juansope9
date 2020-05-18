@@ -1,12 +1,12 @@
-@@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
 body{
-  color: #DA4323;
+  color: black;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #header {
-  background-color: #1abc9c;
+  background-color: #3C7853;
   height: 150px ;
   line-height: 150px ;
 }
@@ -19,7 +19,6 @@ body{
 #header a:hover{
   color: #222;
 }
-
 #header-title{
   display: block;
   float: left;
@@ -36,14 +35,40 @@ body{
   display: inline;
   padding-left: 20px;
 }
-
+#menu{
+  background-color: #3C7853;
+  height: 30px;
+  line-height: 30px;
+}
+#menu ul{
+  text-align: center;
+}
+#menu li{
+  background-color: white;
+  display: inline;
+  padding:0 50px 0 50px ;
+  border: 0 50px 0 50px;
+  border-color: black;
+}
+#menu li.active {
+    background-color: #72AD51;
+    color: black;
+}
+.menu-prin{
+  max-width: 1000px;
+  margin-top: 0;
+}
 .container{
   max-width: 1000px;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 #footer{
   background-color: #2f2f2f;
-  padding: 50px 0;
+  padding: 50px 50px 50px 50px;
+  margin-top: 15px;
+}
+#footer a{
+  color: white;
 }
 .column{
   min-width: 300px;
@@ -59,7 +84,7 @@ body{
   color: white;
 }
 a{
-  color: #1abc9c;
+  color: #black;
   text-decoration: none;
 }
 a:hover{
@@ -67,8 +92,8 @@ a:hover{
 }
 .post, .About{
   max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 0;
+  margin: 0 0;
+  padding: 60px 0 0 0;
   }
   .post-author img, .About-author img{
     width: 150px;
@@ -76,8 +101,10 @@ a:hover{
     vertical-align: middle;
     border-radius: 50px;
   }
-  .post-author span{
-    margin-left: 16px;
+  .post-author {
+    max-width: 200px;
+    float: left;
+    margin: 5px 15px 5px 15px;
   }
 .post-date {
   color: #D2D2D2;
@@ -90,7 +117,20 @@ a:hover{
 }
 h1, h2, h3, h4 {
   color: #333;
-}
+  }
 p{
   line-height: 1.5;
   }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+#content{
+  background-color: white;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+#Experience  {
+  padding-top: 10px;
+}
