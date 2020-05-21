@@ -1,5 +1,3 @@
-X-Content-Type-Options: nosniff
-
 function Comentar() {
   var comentario = document.getElementById("entrada").value;
   document.getElementById('Coment').innerHTML=comentario;
