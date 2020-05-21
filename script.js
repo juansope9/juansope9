@@ -1,7 +1,4 @@
-const helmet = require('helmet')
-app.use(helmet.noSniff())
-const noSniff = require('dont-sniff-mimetype')
-app.use(noSniff())
+X-Content-Type-Options: nosniff
 
 function Comentar() {
   var comentario = document.getElementById("entrada").value;
