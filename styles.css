@@ -37,30 +37,35 @@ body{
 }
 #menu{
   background-color: #3C7853;
-  height: 30px;
+  max-width: 100%;
+  max-height: 30%;
   line-height: 30px;
+  font-size: 100%;
 }
 #menu ul{
+  display: block;
   text-align: center;
 }
 #menu li{
   background-color: white;
-  display: inline;
-  padding:0 50px 0 50px ;
-  border: 0 50px 0 50px;
+  display: inline-block;
+  padding:1% 2% 1% 2% ;
+  border: 1% 2% 1% 2%;
   border-color: black;
+  overflow: auto;
+
 }
 #menu li.active {
     background-color: #72AD51;
     color: black;
 }
 .menu-prin{
-  max-width: 1500px;
+  max-width: 100%;
   margin-top: 0;
-  padding-left: 500px;
+  padding-left: 25%;
 }
 .container{
-  max-width: 1000px;
+  max-width: 80%;
   margin: 0 auto;
 }
 #footer{
@@ -92,18 +97,18 @@ a:hover{
   color: #F6A623;
 }
 .post, .About{
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 0 10px 0;
   padding: 60px 0 10px 0;
   }
   .post-author img, .About-author img{
-    width: 150px;
+    width: 100%;
     height: auto;
     vertical-align: middle;
     border-radius: 50px;
   }
   .post-author {
-    max-width: 200px;
+    max-width: 15%;
     float: left;
     margin: 5px 15px 5px 15px;
   }
@@ -139,9 +144,10 @@ table, th, td {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px ;
+  max-width: 100% ;
   position: relative;
   margin: auto;
+  margin-top: 10%;
 }
 
 /* Hide the images by default */
@@ -230,7 +236,7 @@ table, th, td {
   to {opacity: 1}
 }
 .foto_proyecto img{
-  width: 800px;
+  width: 100%;
   vertical-align: middle;
   align-content: center;
 }
