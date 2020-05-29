@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <meta content="HTML, CSS, JavaScript">
+      <title>Juan Garcia Sopeña</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     </head>
+  <body>
+    <div id="header">
+        <div class="container">
+          <a id="header-title" href="ESP_index.html">Juan GS</a>
+          <ul id="header-nav" class="navbar-links">
+            <li><a href="ESP_about.html">Sobre mí</a></li>
+            <li><a href="mailto:juangs.uniovi@gmail.com?subject=feedback">Contacto</a></li>
+            <li><a href="ESP_index.html">
+              <img src="C:\Users\juang\Desktop\JUAN\Programacion\Pagina Web\Multimedia\spain.png" style="width:4%"</a></li>
+            <li><a href="ENG_index.html">
+              <img src="C:\Users\juang\Desktop\JUAN\Programacion\Pagina Web\Multimedia\eng.png" style="width:4%"</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav id="menu">
+        <ul class="menu-prin">
+          <li><a href="ESP_CV.html">CV</a></li>
+          <li><a href="ESP_Proyectos.html">Proyectos</a></li>
+          <li><a href="ESP_Actividades deportivas.html">Actividades deportivas</a></li>
+          <li><a href="ESP_Blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      </div>
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <a href="ESP_CV.html">
+    <img src="https://raw.githubusercontent.com/juansope9/juansope9.github.io/master/fotoCV1.jpeg" style="width:100%">
+    </a>
+    <div class="text">CV</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <a href="ESP_Proyectos.html">
+    <img src="https://raw.githubusercontent.com/juansope9/juansope9.github.io/master/EPIG.jpg" style="width:100%">
+    <div class="text">PROYECTOS</div>
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <a href="ESP_Actividades deportivas.html">
+    <img src="https://raw.githubusercontent.com/juansope9/juansope9.github.io/master/farinato.jpg" style="width:100%">
+    </a>
+    <div class="text">DEPORTE</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    <div id="footer">
+        <div class="container"></div>
+          <div class="column">
+            <h4>My Links</h4>
+            <p>
+              <a target="_blank" href="https://www.instagram.com/juansope9/?hl=es">Instagram</a>
+              <br>
+              <a target="_blank" href="https://twitter.com/juansope9">Twitter</a>
+              <br>
+              <a target="_blank" href="https://es.linkedin.com/in/juan-garc%C3%ADa-sope%C3%B1a-a149b0104">LinkedIn</a>
+            </p>
+          </div>
+          <div class="column">
+            <h4>My Story</h4>
+            <p>Hi there! I'm an aspiring web developer.</p>
+          </div>
+       <script>
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+    var slideIndex = 0;
+    showSlides2();
+
+    function showSlides2() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides2, 5000); // Change image every 2 seconds
+    }
+</script>
+</div>
+  </body>
+</html>
