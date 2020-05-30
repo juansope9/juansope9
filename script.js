@@ -1,5 +1,8 @@
-function Comentar() {
-  var comentario = document.getElementById("entrada").value;
-  document.getElementById('Coment').innerHTML=comentario;
+function myFunction() {
+  var x = document.getElementById("header-nav");
+  if (x.className === "navbar-links") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-links";
   }
-
+}

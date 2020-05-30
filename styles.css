@@ -9,6 +9,7 @@ body{
   background-color: #3C7853;
   height: 100px ;
   line-height: 100px ;
+  margin-bottom: 0;
 }
 #header a {
   color: white ;
@@ -32,12 +33,14 @@ body{
   max-width: 50%;
   text-align: right;
   margin-bottom: 0;
-  overflow: hidden;
+  font-size: 100%;
+  padding-left: 0%;
 }
 
 #header-nav li {
   display: inline;
   padding: 3%;
+  font-size: 100%;
 }
 #menu{
   clear: both;
@@ -47,6 +50,7 @@ body{
   line-height: 30px;
   font-size: 100%;
   padding-top: 3%;
+  margin-top: 0;
 }
 #menu ul{
   display: block;
@@ -60,7 +64,6 @@ body{
   border-color: black;
   overflow: auto;
   border-radius: 15px;
-
 }
 #menu li.active {
     background-color: #72AD51;
@@ -103,7 +106,7 @@ a{
 a:hover{
   color: #F6A623;
 }
-.post, .About{
+.post, .About {
   max-width: 60%;
   margin: 0 0 10px 0;
   padding: 60px 0 10px 0;
